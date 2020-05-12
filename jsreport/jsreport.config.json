@@ -1,0 +1,20 @@
+{
+  "allowLocalFilesAccess":  true,
+  "extensions": {
+    "scheduling": {
+      "enabled": false
+    },
+    "scripts": {
+      "timeout": 40000,
+      "strategy": "http-server"
+    }
+  },
+  "httpPort": 5488,
+  "store": {
+    "provider": "fs"
+  },  
+  "templatingEngines": {
+    "strategy": "http-server"
+  },
+  "reportTimeout": 40000
+}

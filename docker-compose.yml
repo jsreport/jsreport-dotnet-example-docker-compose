@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  webapp:
+    image: ${DOCKER_REGISTRY-}webapp
+    build:
+      context: .
+      dockerfile: WebApp/Dockerfile
+  jsreport:
+    image: jsreport/jsreport:2.7.2
+    container_name: jsreport
+    ports:
+      - "5488:5488" 
+    volumes:
+      - ./jsreport:/jsreport
