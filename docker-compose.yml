@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: WebApp/Dockerfile
   jsreport:
-    image: jsreport/jsreport:2.7.2
+    image: jsreport/jsreport:2.9.0
     container_name: jsreport
     ports:
       - "5488:5488" 
