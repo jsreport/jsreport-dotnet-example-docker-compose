@@ -6,8 +6,10 @@ services:
     build:
       context: .
       dockerfile: WebApp/Dockerfile
+    depends_on:
+      - jsreport 
   jsreport:
-    image: jsreport/jsreport:2.9.0
+    image: jsreport/jsreport:3.8.0
     container_name: jsreport
     ports:
       - "5488:5488" 
